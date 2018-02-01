@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="StyleWPF.ItemControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:StyleWPF"
+             mc:Ignorable="d" 
+             d:DesignHeight="100" d:DesignWidth="320">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="30*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox Name="nameBox" Text="" Grid.Column="0"/>
+        <TextBlock Name="countBlock" Text=""  Grid.Column="1"/>
+        <Button Name="plusCountButton" Content="+" Grid.Column="2" Click="plusCountButton_Click"/>
+    </Grid>
+</UserControl>
